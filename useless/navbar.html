@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+ /*Navbar*/
+#nav {
+  height: 50px;
+  /*border: solid 1px red;*/
+
+  display: grid;
+  grid-template-columns: repeat(5, 5% 35% 40% 10% 5%);
+  grid-gap: 10px;
+  padding-left: 5%;
+  background-color: rgb(17, 16, 16);
+}
+#nav > div {
+  border: 1px solid transparent;
+}
+#nav > div:nth-child(2) {
+  margin-top: 10px;
+}
+
+#nav > div > a {
+  text-decoration: none;
+  font-size: 1em;
+  font-weight: bolder;
+  font-family: "Helvetica Neue", Helvetica, Arial, Roboto, sans-serif;
+  margin: 5px;
+  color: white;
+}
+
+#nav > div > button {
+  width: 90px;
+  padding: 8px;
+  font-weight: bolder;
+
+  font-family: "Helvetica Neue", Helvetica, Arial, Roboto, sans-serif;
+  border: 1px solid white;
+  background-color: transparent;
+  color: white;
+}
+#nav > div:nth-child(3) {
+  margin-top: 10px;
+}
+
+#nav > div > span {
+  color: white;
+  font-size: 0.8em;
+  font-weight: bolder;
+  font-family: "Helvetica Neue", Helvetica, Arial, Roboto, sans-serif;
+}
+#nav > div > span > a {
+  color: white;
+  margin: 2px;
+  font-weight: bolder;
+  font-family: "Helvetica Neue", Helvetica, Arial, Roboto, sans-serif;
+}
+#nav > div:nth-child(4) {
+  margin-top: 10px;
+}
+#nav > div > select {
+  background-color: transparent;
+  color: white;
+  font-weight: bolder;
+  font-family: "Helvetica Neue", Helvetica, Arial, Roboto, sans-serif;
+  border: 0;
+  font-size: 1em;
+}
+#nav > div:nth-child(5) {
+  margin-top: 10px;
+  border-left: 2px solid white;
+}
+
+/*Middle part*/
+#middle {
+  /* border: 1px solid red;*/
+  /* border-top: 1px solid black; */
+  height: 110px;
+  margin: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 8% 75% 16%);
+}
+#middle > div {
+  border: solid 1px transparent;
+}
+#middle > div:nth-child(2) {
+  margin-top: 50px;
+}
+#middle > div > a {
+  text-decoration: none;
+  margin: 15px;
+  font-size: 1em;
+  font-family: "Helvetica Neue", Helvetica, Arial, Roboto, sans-serif;
+  color: navy;
+}
+#middle > div > a:hover {
+  text-decoration: underline;
+}
+
+#middle > div:nth-child(3) > a {
+  font-size: 0.6em;
+  color: navy;
+  font-weight: bolder;
+}
+#middle > div > input {
+  width: 200px;
+  padding: 10px;
+  margin: 10px;
+  border: 0;
+  border-bottom: 1px solid rgb(44, 44, 44);
+}
+#middle > div > input::placeholder {
+  font-size: 1.2em;
+  color: navy;
+}
+    </style>
+</head>
+<body>
+  <div id="nav">
+    <div>
+      <img
+        width="100%"
+        height="80%"
+        src="https://brandwiki.ru/up/brands/product/190207_4635.jpg"
+      />
+    </div>
+    <div>
+      <a href="">OLD NAVY</a>
+      <a href="">BANANA REPUBLIC</a>
+      <a href="">ATHLETA</a>
+      <button>MY GAP</button>
+    </div>
+    <div>
+      <span>FREE SHIPPING ON $50+ FOR REWARDS MEMBERS</span>
+      <span><a href="">SIGN IN OR JOIN</a></span>
+      <span><a href="">DETAILS</a></span>
+    </div>
+    <div>
+      <a href="signin.html">Sign In</a>
+      <select>
+        <option>Your Account</option>
+      </select>
+    </div>
+    <div>
+      <img
+        width="50%"
+        height="50%"
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQU9cMjuePxR1AXt-FOdcdRQylbLZUyxy4SjLY7x5dBK4jbAO1_LGQ00ZkgC28IFo0mYvs&usqp=CAU"
+      />
+      
+    </div>
+  </div>
+  <div id="middle">
+      <div>
+        <a href="home.html"><img
+        width="100%"
+        height="80%"
+        src="https://brandwiki.ru/up/brands/product/190207_4635.jpg"
+      /></a>
+      </div>
+      <div>
+        <a href="">NEW</a>
+        <a href="category.html">WOMEN</a>
+        <a href="">MATERNITY</a>
+        <a href="">MEN</a>
+        <a href="">TEEN</a>
+        <a href="">GIRLS</a>
+        <a href="">BOYS</a>
+        <a href="">TODDLER</a>
+        <a href="">BABY</a>
+        <a href="">JEANS</a>
+        <a style="color: rgb(223, 21, 21)" href="">SALE</a>
+        <a href="">FACTORY</a>
+      </div>
+      <div>
+        <a href="">FIND A STORE</a>
+        <a href="">GAP GOOD REWARDS</a>
+        <a href="">GIFT CARD</a>
+        <input type="text" placeholder="Search:" />
+      </div>
+    </div>
+</body>
+</html>
