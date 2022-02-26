@@ -5,6 +5,7 @@ const ejs=require("ejs")
 const connect=require("./configs/db");
 
 const homeController=require("./controllers/home.controller");
+const paymentController=require("./controllers/payment.controller")
 
 app.use(express.json());
 app.use(express.urlencoded({extended:true}));
@@ -13,6 +14,7 @@ app.use(express.static("public"));
 
 
 app.use("/home",homeController)
+
 
 
 app.listen(2020,async()=>{

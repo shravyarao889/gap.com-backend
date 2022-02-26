@@ -6,22 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="/navbar.css">
-    <link rel="stylesheet" href="/dresses.css">
+    <link rel="stylesheet" href="/checkout.css">
     <link rel="stylesheet" href="/footer.css">
 </head>
-<body onload="sendData(`<%=JSON.stringify(dresses)%>`)">
-      
+<body onload="sendData(`<%=JSON.stringify(cart_item)%>`)">
     <%- include("../partial/navbar.ejs")%>
-    <%- include("../partial/dresses.ejs")%>
+    <%- include("../partial/checkout.ejs")%>
     <%- include("../partial/footer.ejs")%>
-
+    <!-- <h1>connected</h1> -->
 </body>
 </html>
 
-
-<script src="/dresses.js">
-    // function sendData(data){
-    //     let dresses=JSON.parse(data);
-    //     console.log(dresses)
-    // }
-</script>
+<script src="/checkout.js"></script> 

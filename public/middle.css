@@ -1,3 +1,9 @@
+body{
+  margin: 0;
+  padding: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, Roboto, sans-serif;
+}
+
 #extra {
     height: 200px;
     /*border: 1px solid red;*/
@@ -113,10 +119,11 @@
   }
   
   #five {
-    height: 350px;
+    height: 400px;
     /* border: solid 1px black;*/
     display: grid;
     grid-template-columns: repeat(5, 1fr);
+    overflow: scroll;
   }
   #five > div {
     /*border: 1px solid red;*/
@@ -134,18 +141,31 @@
     color: navy;
     font-family: "Helvetica Neue", Helvetica, Arial, Roboto, sans-serif;
     margin: 5px;
-    font-size: 1em;
+    font-size: 2em;
+    font-weight: 400;
+
   }
   #next {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(75%,25%);
     grid-template-rows: 650px;
-    /* border: 1px solid red;*/
+    /* border: 1px solid red; */
     margin: 70px;
+    height: 700px;
+    background-color: #e3e4e7;
   }
   #next > div {
-    /*border: 1px solid black;*/
+    /* border: 1px solid black; */
     margin: 10px;
+  }
+  #next p{
+    font-size: 37px;
+    font-weight: 400;
+    color: #000000;
+  }
+  #video_div{
+    height: 100%;
+    width: 100%;
   }
   
   #button {
