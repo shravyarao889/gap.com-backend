@@ -1,15 +1,31 @@
-let bill = JSON.parse(localStorage.getItem("bill"));
+var final_item;
+function sendData(data){
+     final_item=JSON.parse(data)
+    console.log("final_item:",final_item)
+    display(final_item)
+}
 
-  let subtotal = document.getElementById("subtotal");
 
-  subtotal.innerHTML = "$" + bill;
+// let bill = JSON.parse(localStorage.getItem("bill"));
+function display(elem){
+    // let checkbox1=document.getElementById("checkbox1").value
+    // let checkbox1=document.getElementById("checkbox2").value
+    // let checkbox1=document.getElementById("checkbox3").value
+    // let checkbox1=document.getElementById("checkbox4").value
 
-  let total = document.getElementById("total");
+    let subtotal = document.getElementById("subtotal");
+    subtotal.innerHTML = elem.price[0];
 
-  total.innerHTML = "$" + bill;
+    let total = document.getElementById("total");
+    // total.innerHTML =elem.price[0] 
+    // console.log(checkbox1)
+    // if(checkbox1.checked){
+    //   total.innerHTML=(checkbox1+subtotal.shift());
+    // }
+}
 
-  ///////////////payment div/////////////////
 
+// ------------------------------------payment div----------------------------
   let pay = document.getElementById("pay");
   let payment = document.getElementById("continue");
 
@@ -87,26 +103,50 @@ let bill = JSON.parse(localStorage.getItem("bill"));
   }
  
 
-//----------------shipping charges --------------------
+// //----------------shipping charges --------------------
   let shipping_charge= document.getElementById("shipping_charge")
   
   
     const  checked1 = () => {
      let checkbox= document.getElementById("checkbox1").value
-
      shipping_charge.innerHTML="$"+checkbox
-     total.innerHTML = "$" + (bill+(+checkbox));
-    console.log(checkbox)
+
+     let a=final_item.price[0];
+    a=a.slice(1)
+    
+    let b=shipping_charge.textContent
+    b=b.slice(1)
+    
+    // console.log(a,b)
+    // console.log(typeof(a,b))
+
+    total.innerHTML = "$" + ((+a)+(+b)).toFixed(2);
+    setTimeout(function(){
+      alert(`your total bill amount is,  ${total.innerHTML}
+      please proceed for the payment`)
+    },1000)
+    // console.log(checkbox)
    }
       
  
    const  checked2 = () => {
-
     let checkbox= document.getElementById("checkbox2").value
     shipping_charge.innerHTML= "$"+checkbox
 
-    total.innerHTML = "$" + (bill+(+checkbox));
-   console.log(checkbox)
+    let a=final_item.price[0];
+    a=a.slice(1)
+    
+    let b=shipping_charge.textContent
+    b=b.slice(1)
+    
+    // console.log(a,b)
+    // console.log(typeof(a,b))
+
+    total.innerHTML = "$" + ((+a)+(+b)).toFixed(2);
+    setTimeout(function(){
+      alert(`your total bill amount is,  ${total.innerHTML}
+      please proceed for the payment`)
+    },1000)
   }
      
  
@@ -114,8 +154,22 @@ let bill = JSON.parse(localStorage.getItem("bill"));
 
     let checkbox= document.getElementById("checkbox3").value
     shipping_charge.innerHTML= "$"+checkbox
-    total.innerHTML = "$" + (bill+(+checkbox));
-   console.log(checkbox)
+
+    let a=final_item.price[0];
+    a=a.slice(1)
+    
+    let b=shipping_charge.textContent
+    b=b.slice(1)
+    
+    // console.log(a,b)
+    // console.log(typeof(a,b))
+
+    total.innerHTML = "$" + ((+a)+(+b)).toFixed(2);
+    setTimeout(function(){
+      alert(`your total bill amount is,  ${total.innerHTML}
+      please proceed for the payment`)
+    },1000)
+  //  console.log(checkbox)
   
   }
      
@@ -125,6 +179,21 @@ let bill = JSON.parse(localStorage.getItem("bill"));
     let checkbox= document.getElementById("checkbox4").value
     shipping_charge.innerHTML= "$"+checkbox
 
-    total.innerHTML = "$" + (bill+(+checkbox));
-   console.log(checkbox)
+    let a=final_item.price[0];
+    a=a.slice(1)
+    
+    let b=shipping_charge.textContent
+    b=b.slice(1)
+    
+    // console.log(a,b)
+    // console.log(typeof(a,b))
+
+    total.innerHTML = "$" + ((+a)+(+b)).toFixed(2);
+    setTimeout(function(){
+      alert(`your total bill amount is,  ${total.innerHTML}
+      please proceed for the payment`)
+    },1000)
+  //  console.log(checkbox)
   }
+
+

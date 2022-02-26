@@ -130,7 +130,7 @@ document.getElementById("keepShopBtn").onclick=()=>{
 
 // //<--------------go to chechout page---------------->
 document.getElementById("coBtn").onclick=()=> {
-    single(cartArray)
+    single(view_items)
 }
 
 function single({_id}){

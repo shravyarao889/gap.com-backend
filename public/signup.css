@@ -1,0 +1,97 @@
+
+#sign{
+    width: 500px;
+    height: 500px;
+    /*border: 1px solid rgb(167, 163, 163);*/
+    margin: auto;
+}
+#sign>h3{
+    font-size: 1.7rem;
+    font-weight: bolder;
+    color: #333;
+    font-family: Source Sans Pro,Helvetica,Arial,Roboto,sans-serif;
+    padding-left: 12%;
+    margin-bottom: 1.5rem;
+    line-height: 0;
+}
+#sign>input{
+    margin-left: 12%;
+    width: 350px;
+    border: 0;
+    border-bottom: 1px solid black;
+    padding: 9px;
+
+}
+#sign>input:hover{
+    border: 1px solid red;
+
+}
+.nine{
+    font-size: 0.9rem;
+    font-weight: lighter;
+    color: rgb(105, 105, 105);
+    font-family: Source Sans Pro,Helvetica,Arial,Roboto,sans-serif;
+    padding-left: 12%;
+    
+}
+.one{
+    font-size: 0.9rem;
+    font-weight: lighter;
+    color: rgb(88, 88, 243);
+    font-family: Source Sans Pro,Helvetica,Arial,Roboto,sans-serif;
+    padding-left: 12%;
+}
+.three{
+    font-size: 0.7rem;
+    font-weight: lighter;
+    color: rgb(105, 105, 105);
+    font-family: Source Sans Pro,Helvetica,Arial,Roboto,sans-serif;
+    padding-left: 12%;
+
+}
+#sign>button{
+    background-color: orangered;
+    width: 375px;
+    margin: 20px;
+    margin-left:12%;
+    color: white;
+    padding: 13px;
+    border: 0;
+    border-radius: 3px;
+    font-weight: bolder;
+}
+#sign>a{
+    text-decoration: none;
+    color: rgb(88, 88, 243);
+    margin-left: 35%;
+    
+}
+
+.gap{
+    display: grid;
+    grid-template-columns: 12% 80%;
+    margin-left: 15%;
+    
+    
+}
+/*.gap>div{
+    border: 1px solid black;
+}*/
+.gap>div:nth-child(2)>a{
+  text-decoration: none;
+  font-size: 0.9em;
+  color: rgb(88, 88, 243);
+}
+.gap>div:nth-child(2)>a:hover{
+    text-decoration: underline;
+}
+.gap>div:nth-child(1)>img{
+    margin-top: 20px;
+}
+.gap>div:nth-child(2){
+    margin-top: 30px;
+}
+.gap>div:nth-child(2)>span{
+    font-size: 0.9em;
+    
+}

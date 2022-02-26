@@ -9,11 +9,11 @@
     <link rel="stylesheet" href="/payment.css">
     <link rel="stylesheet" href="/footer.css">
 </head>
-<body>
+<body onload="sendData(`<%=JSON.stringify(final_item)%>`)">
     <%- include("../partial/navbar.ejs")%>
     <%- include("../partial/payment.ejs")%>
     <%- include("../partial/footer.ejs")%>
 </body>
 </html>
 
-<script></script>
+<script src="/payment.js"></script>

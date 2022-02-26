@@ -86,5 +86,31 @@ router.get("/payment", async(req,res)=>{
     }
 })
 
+router.get("/payment/:id", async(req,res)=>{
+    try{
+        const final_item=await Dresses.findById(req.params.id).lean().exec();
+        return res.render("products/payment_page.ejs",{final_item})
+    }catch(err){
+        return res.status(500).send(err.message)
+    }
+})
+
+
+router.get("/welcome", async(req,res)=>{
+    try{
+       return res.render("products/welcome_page.ejs")
+    }catch(err){
+        return res.status(500).send(err.message)
+    }
+})
+
+
+router.get("/create", async(req,res)=>{
+    try{
+       return res.render("products/create_signup_page.ejs")
+    }catch(err){
+        return res.status(500).send(err.message)
+    }
+})
 
 module.exports=router;

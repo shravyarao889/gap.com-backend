@@ -1,0 +1,120 @@
+#auth{
+    width: 550px;
+    height: 550px;
+    /*border: 1px solid black;*/
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1,1fr;
+    grid-template-rows: 5% 25% 45% 10%;
+    grid-gap: 5px;
+
+}
+#auth>div:nth-child(3){
+    border: 1px solid rgb(204, 201, 201);
+}
+#auth>div>a{
+    text-decoration: none;
+    color: black;
+}
+.a1{
+    display: inline-block;
+    
+}
+
+.a1>div>h3{
+    margin-left: 120px;
+    font-size: 1em;
+}
+/*.a1>div{
+    border: 1px solid red;
+}*/
+.bna{
+    height: 30%;
+    display: grid;
+    grid-template-columns: repeat(4,10% 30% 20% 30% );
+   
+    margin-left: 90px;
+}
+/*.bna>div{
+    border: 1px solid blue;
+}*/
+.bna>div:nth-child(1){
+    margin-top: 10px;
+}
+.bna>div:nth-child(2){
+    margin-bottom: 20px;
+}
+
+
+.rep{
+    font-weight: bold;
+    font-size: 0.9em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+
+
+#ema>h2{
+    margin-left: 90px;
+    font-weight: bolder;
+    font-size: 1.8em;
+}
+#ema>p{
+    color: red;
+    margin-left: 90px;
+    font-size: 0.8em;
+}
+#ema>input{
+    width: 330px;
+    padding: 9px;
+    margin-left: 90px;
+    border: 0;
+    border-bottom: 1px solid black;
+}
+#ema>input:hover{
+    border: 1px solid red;
+    background-color: rgb(185, 241, 241);
+}
+#ema>button{
+    background-color: orangered;
+    width: 350px;
+    margin: 20px;
+    margin-left: 90px;
+    color: white;
+    padding: 13px;
+    border: 0;
+    border-radius: 3px;
+    font-weight: bolder;
+}
+#ema>img{
+    margin-left: 110px;
+   
+}
+.gap{
+    display: grid;
+    grid-template-columns: 12% 80%;
+    margin-left: 90px;
+    
+    
+}
+/*.gap>div{
+    border: 1px solid black;
+}*/
+.gap>div:nth-child(2)>a{
+  text-decoration: none;
+  font-size: 0.9em;
+  color: rgb(88, 88, 243);
+}
+.gap>div:nth-child(2)>a:hover{
+    text-decoration: underline;
+}
+.gap>div:nth-child(1)>img{
+    margin-top: 20px;
+}
+.gap>div:nth-child(2){
+    margin-top: 30px;
+}
+.gap>div:nth-child(2)>span{
+    font-size: 0.9em;
+    
+}

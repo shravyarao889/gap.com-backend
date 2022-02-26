@@ -195,7 +195,16 @@ function sendData(data){
   //     }
   // }
 
+  const checkoutBtn=document.getElementById("checkoutBtn")
+  checkoutBtn.addEventListener("click",()=>{
+    single(cart_item)
+  })
+
+  function single({_id}){
+    console.log(_id);
+    window.location.href = `http://localhost:2020/home/payment/${_id}`;
+  }
 
 // const goToPayment=()=>{
-// window.location.href = "./payment.html"
+//    window.location.href = "http://localhost:2020/home/payment"
 // }

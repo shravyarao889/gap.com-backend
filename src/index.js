@@ -15,6 +15,14 @@ app.use(express.static("public"));
 
 app.use("/home",homeController)
 
+// const connect =require("./src/configs/db");
+
+const userController = require("./controllers/user.controller")
+const {register,login} =require("./controllers/auth.controller")
+
+app.use("/users",userController)
+app.use("/register",register)
+app.use("/login",login)
 
 
 app.listen(2020,async()=>{
