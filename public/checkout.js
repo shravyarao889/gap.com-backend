@@ -202,7 +202,7 @@ function sendData(data){
 
   function single({_id}){
     console.log(_id);
-    window.location.href = `http://localhost:2020/home/payment/${_id}`;
+    window.location.href = `/home/payment/${_id}`;
   }
 
 // const goToPayment=()=>{

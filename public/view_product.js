@@ -124,7 +124,7 @@ document.getElementById("crosS").onclick=()=>{
 }
 
 document.getElementById("keepShopBtn").onclick=()=>{
-    window.location.href="http://localhost:2020/home/dresses"
+    window.location.href="/home/dresses"
 }
 
 
@@ -135,7 +135,7 @@ document.getElementById("coBtn").onclick=()=> {
 
 function single({_id}){
     // console.log(_id)
-    window.location.href=`http://localhost:2020/home/checkout/${_id}`;
+    window.location.href=`/home/checkout/${_id}`;
 }
 
 
