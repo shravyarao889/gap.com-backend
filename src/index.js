@@ -1,7 +1,7 @@
 const express = require("express");
 const app = express();
 const ejs = require("ejs");
-const PORT = process.env.port || 2020;
+const PORT = process.env.PORT || 2020;
 
 const connect = require("./configs/db");
 
