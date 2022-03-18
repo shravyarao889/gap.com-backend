@@ -71,19 +71,36 @@ First you will land on the main page of the website.You can now go to the catego
 
 ## Home_Page
 
-![Screenshot (409)](https://user-images.githubusercontent.com/95854153/158667988-c352a2e0-c94e-4b34-9a9b-30d664a4a326.png)
 
-## Products_Page
+![Screenshot (418)](https://user-images.githubusercontent.com/96167495/159065291-6e07f9b3-f285-40a6-8a6f-fff66c8fdeed.png)
 
-![Screenshot (413)](https://user-images.githubusercontent.com/95854153/158668131-35635f71-15fb-48f6-be33-7a489a2a24dc.png)
+## Category_Page
 
+![Screenshot (428)](https://user-images.githubusercontent.com/96167495/159067841-a6c3fc4e-f380-456c-8346-b540f9f9bd48.png)
+
+## Product_Page
+
+![Screenshot (430)](https://user-images.githubusercontent.com/96167495/159067937-fd44dd20-619c-421b-b542-0f0c1baa8fb1.png)
+
+
+## SingleProduct_Page
+
+![Screenshot (429)](https://user-images.githubusercontent.com/96167495/159068048-d61e6ca8-8861-4524-92c8-d49654f52739.png)
+
+## SingleProduct_Page2
+![Screenshot (431)](https://user-images.githubusercontent.com/96167495/159068268-2e31284c-52a5-4ac8-acce-28eafd191e18.png)
+
+## Whishlist_Page
+![Screenshot (432)](https://user-images.githubusercontent.com/96167495/159068404-cf284aa7-6480-4c50-82e2-6094ba5a9a0e.png)
 
 ## Cart_Page
+![Screenshot (433)](https://user-images.githubusercontent.com/96167495/159068487-2ebbafa4-5cb9-4800-91b0-d5e6334e9b26.png)
+## Cart-Page2
+![Screenshot (434)](https://user-images.githubusercontent.com/96167495/159068736-2d0fd269-b8aa-4e20-9422-2672e1d9717a.png)
 
-![Screenshot (415)](https://user-images.githubusercontent.com/95854153/158668157-00b00869-9ec1-4ddc-b818-693267b666f1.png)
+## Checkout_And_Payment_Page
 
+![Screenshot (435)](https://user-images.githubusercontent.com/96167495/159068920-3ae0f81b-edc2-498c-b807-afe707a26894.png)
 
-## Payment_Page
-
-![Screenshot (416)](https://user-images.githubusercontent.com/95854153/158668205-97b23ae7-7d49-4372-985c-24cdac093ee5.png)
-
+## Payment_section
+![Screenshot (436)](https://user-images.githubusercontent.com/96167495/159068985-948664f3-c385-4e17-84a0-d7653950bd52.png)
