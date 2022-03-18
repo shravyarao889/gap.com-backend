@@ -1,6 +1,7 @@
 const express=require("express");
 const app=express();
 const ejs=require("ejs")
+const PORT = process.env.port||2020
 
 const connect=require("./configs/db");
 
@@ -25,10 +26,10 @@ app.use("/register",register)
 app.use("/login",login)
 
 
-app.listen(2020,async()=>{
+app.listen(PORT,async()=>{
     try{
         await connect();
-        console.log("Listening on port 2020...")
+        console.log(`Listening on ${PORT}...`)
     }catch(err){
         console.log("err:",err)
     }
